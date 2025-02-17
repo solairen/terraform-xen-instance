@@ -24,8 +24,4 @@ resource "xenorchestra_vm" "main" {
   timeouts {
     create = var.xen_timeouts
   }
-
-  lifecycle {
-    create_before_destroy = var.xen_lifecycle
-  }
 }

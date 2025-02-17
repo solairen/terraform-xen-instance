@@ -59,9 +59,3 @@ variable "xen_timeouts" {
   description = "The timeouts for the VM"
   type        = string
 }
-
-variable "xen_lifecycle" {
-  description = "The lifecycle for the VM"
-  type        = bool
-  default     = true
-}
