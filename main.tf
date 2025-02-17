@@ -8,7 +8,7 @@ resource "xenorchestra_vm" "main" {
   cloud_config     = var.xen_cloud_config
   name_label       = var.xen_name_label
   name_description = var.xen_name_description
-  template         = var.data.xenorchestra_template.template.id
+  template         = data.xenorchestra_template.template.id
 
   network {
     network_id       = var.xen_network_id
