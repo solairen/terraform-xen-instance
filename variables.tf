@@ -70,3 +70,8 @@ variable "xen_timeouts" {
   type        = string
   default     = "20m"
 }
+
+variable "xen_pool_name" {
+  description = "Pool name"
+  type        = string
+}

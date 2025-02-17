@@ -1,3 +1,7 @@
+data "xenorchestra_pool" "pool" {
+  name_label = var.xen_pool_name
+}
+
 data "xenorchestra_template" "template" {
   name_label = var.xen_template
 }
