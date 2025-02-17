@@ -1,4 +1,4 @@
-resource "xenorchestra_vm" "xen_instance" {
+resource "xenorchestra_vm" "main" {
   memory_max       = var.xen_memory_max
   cpus             = var.xen_cpus
   cloud_config     = var.xen_cloud_config
