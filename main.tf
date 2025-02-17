@@ -7,14 +7,14 @@ resource "xenorchestra_vm" "main" {
   template         = var.xen_template
 
   network {
-    network_id       = var.xen_network.network_id
-    expected_ip_cidr = var.xen_network.expected_ip_cidr
+    network_id       = var.xen_network_id
+    expected_ip_cidr = var.xen_expected_ip_cidr
   }
 
   disk {
-    sr_id      = var.xen_disk.sr_id
-    name_label = var.xen_disk.name_label
-    size       = var.xen_disk.size
+    sr_id      = var.xen_disk_sr_id
+    name_label = var.xen_disk_name_label
+    size       = var.xen_disk_size
   }
 
   clone_type = var.xen_clone_type
