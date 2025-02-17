@@ -1,0 +1,48 @@
+{
+    "name": "terraform xen instances",
+    "image": "ghcr.io/solairen/docker-dev/development:1.1.0",
+    "postCreateCommand": "echo DONE!",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/development,type=bind",
+    "workspaceFolder": "/development",
+    "mounts": [
+      "source=${localEnv:HOME}/.ssh,target=/home/moleszek/.ssh,type=bind,consistency=cached",
+      "source=${localEnv:HOME}/.gnupg,target=/home/moleszek/.gnupg,type=bind,consistency=cached"
+      //"source=${localEnv:HOME}/.continue,target=/home/moleszek/.continue,type=bind,consistency=cached"
+    ],
+    "remoteUser": "moleszek",
+    "containerUser": "moleszek",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.profiles.linux": {
+            "bash": {
+              "path": "bash",
+              "icon": "terminal-bash"
+            }
+          }
+        },
+        "extensions": [
+          // Terraform
+          "hashicorp.terraform",
+          "ms-azuretools.vscode-azureterraform",
+          // Docs
+          "redhat.vscode-yaml",
+          "docsmsft.docs-preview",
+          // Others
+          "eamodio.gitlens",
+          "aaron-bond.better-comments",
+          "ybaumes.highlight-trailing-white-spaces",
+          "Gruntfuggly.todo-tree",
+          // GitHub
+          "GitHub.copilot",
+          "GitHub.copilot-chat",
+          "GitHub.vscode-pull-request-github",
+          "github.vscode-github-actions",
+          "ms-azuretools.vscode-azure-github-copilot",
+          "GitHub.remotehub"
+          // Open Source Ollama
+          //"Continue.continue"
+        ]
+      }
+    }
+  }

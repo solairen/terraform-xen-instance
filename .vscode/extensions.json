@@ -1,0 +1,24 @@
+{
+  "recommendations": [
+    // Terraform
+    "hashicorp.terraform",
+    "ms-azuretools.vscode-azureterraform",
+    // Docs
+    "redhat.vscode-yaml",
+    "docsmsft.docs-preview",
+    // Others
+    "eamodio.gitlens",
+    "aaron-bond.better-comments",
+    "ybaumes.highlight-trailing-white-spaces",
+    "Gruntfuggly.todo-tree",
+    // GitHub
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    "ms-azuretools.vscode-azure-github-copilot",
+    "GitHub.remotehub"
+    // Open Source Ollama
+    //"Continue.continue"
+  ]
+}
