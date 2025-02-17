@@ -1,10 +1,14 @@
+data "xenorchestra_template" "template" {
+  name_label = var.xen_template
+}
+
 resource "xenorchestra_vm" "main" {
   memory_max       = var.xen_memory_max
   cpus             = var.xen_cpus
   cloud_config     = var.xen_cloud_config
   name_label       = var.xen_name_label
   name_description = var.xen_name_description
-  template         = var.xen_template
+  template         = var.data.xenorchestra_template.template.id
 
   network {
     network_id       = var.xen_network_id
