@@ -1,34 +1,34 @@
-variable "memory_max" {
+variable "xen_memory_max" {
   description = "The maximum memory for the VM"
   type        = number
 }
 
-variable "cpus" {
+variable "xen_cpus" {
   description = "The number of CPUs for the VM"
   type        = number
 }
 
-variable "cloud_config" {
+variable "xen_cloud_config" {
   description = "The cloud config for the VM"
   type        = string
 }
 
-variable "name_label" {
+variable "xen_name_label" {
   description = "The name label for the VM"
   type        = string
 }
 
-variable "name_description" {
+variable "xen_name_description" {
   description = "The name description for the VM"
   type        = string
 }
 
-variable "template" {
+variable "xen_template" {
   description = "The template for the VM"
   type        = string
 }
 
-variable "network" {
+variable "xen_network" {
   description = "The network for the VM"
   type = object({
     network_id       = string
@@ -36,7 +36,7 @@ variable "network" {
   })
 }
 
-variable "disk" {
+variable "xen_disk" {
   description = "The disk for the VM"
   type = object({
     sr_id      = string
@@ -45,22 +45,22 @@ variable "disk" {
   })
 }
 
-variable "clone_type" {
+variable "xen_clone_type" {
   description = "The clone type for the VM"
   type        = string
 }
 
-variable "tags" {
+variable "xen_tags" {
   description = "The tags for the VM"
   type        = map(string)
 }
 
-variable "timeouts" {
+variable "xen_timeouts" {
   description = "The timeouts for the VM"
   type        = string
 }
 
-variable "lifecycle" {
+variable "xen_lifecycle" {
   description = "The lifecycle for the VM"
   type        = bool
 }

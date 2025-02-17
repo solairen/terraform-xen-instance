@@ -1,31 +1,31 @@
 resource "xenorchestra_vm" "xen_instance" {
-  memory_max       = var.memory_max
-  cpus             = var.cpus
-  cloud_config     = var.cloud_config
-  name_label       = var.name_label
-  name_description = var.name_description
-  template         = var.template
+  memory_max       = var.xen_memory_max
+  cpus             = var.xen_cpus
+  cloud_config     = var.xen_cloud_config
+  name_label       = var.xen_name_label
+  name_description = var.xen_name_description
+  template         = var.xen_template
 
   network {
-    network_id       = var.network.network_id
-    expected_ip_cidr = var.network.expected_ip_cidr
+    network_id       = var.xen_network.network_id
+    expected_ip_cidr = var.xen_network.expected_ip_cidr
   }
 
   disk {
-    sr_id      = var.disk.sr_id
-    name_label = var.disk.name_label
-    size       = var.disk.size
+    sr_id      = var.xen_disk.sr_id
+    name_label = var.xen_disk.name_label
+    size       = var.xen_disk.size
   }
 
-  clone_type = var.clone_type
+  clone_type = var.xen_clone_type
 
-  tags = var.tags
+  tags = var.xen_tags
 
   timeouts {
-    create = var.timeouts
+    create = var.xen_timeouts
   }
 
   lifecycle {
-    create_before_destroy = var.lifecycle
+    create_before_destroy = var.xen_lifecycle
   }
 }
