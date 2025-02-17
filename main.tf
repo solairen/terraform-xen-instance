@@ -2,6 +2,10 @@ data "xenorchestra_template" "template" {
   name_label = var.xen_template
 }
 
+data "xenorchestra_network" "net" {
+  name_label = var.xen_network_id
+}
+
 resource "xenorchestra_vm" "main" {
   memory_max       = var.xen_memory_max
   cpus             = var.xen_cpus
@@ -11,7 +15,7 @@ resource "xenorchestra_vm" "main" {
   template         = data.xenorchestra_template.template.id
 
   network {
-    network_id       = var.xen_network_id
+    network_id       = data.xenorchestra_network.net.id
     expected_ip_cidr = var.xen_expected_ip_cidr
   }
 
