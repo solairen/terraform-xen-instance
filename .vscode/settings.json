@@ -8,5 +8,6 @@
     "scminput": false
   },
   "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "diffEditor.ignoreTrimWhitespace": false
 }
