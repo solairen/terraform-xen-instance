@@ -1,14 +1,12 @@
 {
     "name": "terraform xen instances",
-    "image": "alpine/terragrunt:1.10.3",
+    "image": "hashicorp/terraform:1.10.5",
     "postCreateCommand": "echo DONE!",
     "mounts": [
       "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
       "source=${localEnv:HOME}/.gnupg,target=/root/.gnupg,type=bind,consistency=cached"
       //"source=${localEnv:HOME}/.continue,target=/root/.continue,type=bind,consistency=cached"
     ],
-    "remoteUser": "root",
-    "containerUser": "root",
     "customizations": {
       "vscode": {
         "settings": {

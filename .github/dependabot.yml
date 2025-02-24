@@ -1,10 +1,4 @@
 version: 2
-registries:
-  ghcr:
-    type: docker-registry
-    url: https://ghcr.io
-    username: ${{secrets.GHCR_USERNAME}}
-    password: ${{secrets.GHCR_PASSWORD}}
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -14,8 +8,6 @@ updates:
       - solairen
   - package-ecosystem: "devcontainers"
     directory: "/"
-    registries:
-      - ghcr
     schedule:
       interval: "weekly"
     assignees:
