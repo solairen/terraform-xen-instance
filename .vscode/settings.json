@@ -1,0 +1,13 @@
+{
+  "editor.tabSize": 2,
+  "github.copilot.enable": {
+    "*": true,
+    "typescript": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "diffEditor.ignoreTrimWhitespace": false
+}
