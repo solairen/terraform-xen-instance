@@ -29,9 +29,9 @@ Dev Containers extension for VSCode is required.
 To install this module, add the following to your Terraform configuration:
 
 ```hcl
-module "xen_vm" {
-  source = "terraform-xen-instance/vms/module"
-  ...
+module "instance" {
+  source  = "solairen/instance/xen"
+  version = "1.0.0"
 }
 ```
 
