@@ -30,8 +30,8 @@ To install this module, add the following to your Terraform configuration:
 
 ```hcl
 module "instance" {
-  source  = "solairen/instance/xen//module"
-  version = "1.0.0"
+  source  = "solairen/instance/xen"
+  version = "1.1.0"
 }
 ```
 
@@ -46,8 +46,8 @@ resource "xenorchestra_cloud_config" "nexus_cloud_init_config" {
 }
 
 module "xen_vm" {
-  source  = "solairen/instance/xen//module"
-  version = "1.0.0"
+  source  = "solairen/instance/xen"
+  version = "1.1.0"
 
   xen_pool_name        = "xen-pool"
   xen_memory_max       = 4294967296

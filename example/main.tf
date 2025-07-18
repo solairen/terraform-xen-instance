@@ -6,7 +6,7 @@ resource "xenorchestra_cloud_config" "cloud_init_config" {
 }
 
 module "example_module" {
-  source = "../module"
+  source = "../"
 
   xen_pool_name        = "xen-pool"
   xen_memory_max       = 4294967296 * local.gigabyte_to_byte
