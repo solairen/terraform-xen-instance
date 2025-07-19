@@ -1,4 +1,4 @@
-name: 🤖 Add PR from Dependabot to project
+name: Add PR from Dependabot to project
 
 on:
   pull_request:
