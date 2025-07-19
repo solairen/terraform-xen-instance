@@ -19,3 +19,11 @@
 
 
 **Full Changelog**: https://github.com/solairen/terraform-xen-instance/compare/1.0.0...1.0.1
+
+## 1.1.0
+
+## What's Changed
+* [Task]: Move terraform code outside module folder by @solairen in https://github.com/solairen/terraform-xen-instance/pull/10
+
+
+**Full Changelog**: https://github.com/solairen/terraform-xen-instance/compare/1.0.1...1.1.0
