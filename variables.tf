@@ -75,3 +75,21 @@ variable "xen_pool_name" {
   description = "Pool name"
   type        = string
 }
+
+variable "xen_destroy_cloud_config_vdi_after_boot" {
+  description = "Determines whether the cloud config VDI should be deleted once the VM has booted"
+  type        = bool
+  default     = false
+}
+
+variable "xen_auto_poweron" {
+  description = "Determines whether the VM should be automatically powered on after creation"
+  type        = bool
+  default     = false
+}
+
+variable "xen_high_availability" {
+  description = "Determines whether the VM should be configured for high availability"
+  type        = string
+  default     = ""
+}
