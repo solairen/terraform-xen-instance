@@ -1,7 +1,7 @@
 {
     "name": "terraform xen instances",
     "image": "hashicorp/terraform:1.10.5",
-    "postCreateCommand": "apk add gnupg && echo DONE!",
+    "postCreateCommand": "apk add --no-cache gnupg python3 py3-pip bash && pip3 install pre-commit --break-system-packages && pre-commit install && echo DONE!",
     "mounts": [
       "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
       "source=${localEnv:HOME}/.gnupg,target=/root/.gnupg,type=bind,consistency=cached"
