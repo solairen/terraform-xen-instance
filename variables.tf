@@ -32,7 +32,7 @@ variable "xen_template" {
 
 variable "xen_network_id" {
   description = "The network for the VM"
-  type = string
+  type        = string
 }
 
 variable "xen_expected_ip_cidr" {
@@ -42,7 +42,7 @@ variable "xen_expected_ip_cidr" {
 
 variable "xen_disk_sr_id" {
   description = "The disk for the VM"
-  type = string
+  type        = string
 }
 
 variable "xen_disk_name_label" {
