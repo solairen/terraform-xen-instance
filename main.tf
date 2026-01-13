@@ -29,7 +29,10 @@ resource "xenorchestra_vm" "main" {
     size       = var.xen_disk_size
   }
 
-  clone_type = var.xen_clone_type
+  clone_type                          = var.xen_clone_type
+  destroy_cloud_config_vdi_after_boot = var.xen_destroy_cloud_config_vdi_after_boot
+  auto_poweron                        = var.xen_auto_poweron
+  high_availability                   = var.xen_high_availability
 
   tags = var.xen_tags
 
