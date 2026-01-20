@@ -46,3 +46,11 @@
 * @dependabot[bot] made their first contribution in https://github.com/solairen/terraform-xen-instance/pull/12
 
 **Full Changelog**: https://github.com/solairen/terraform-xen-instance/compare/1.1.0...1.1.1
+
+## 1.1.2
+
+## What's Changed
+* Bump solairen/ruleset-trigger from 1.0.3 to 1.0.4 by @dependabot[bot] in https://github.com/solairen/terraform-xen-instance/pull/23
+
+
+**Full Changelog**: https://github.com/solairen/terraform-xen-instance/compare/1.1.1...1.1.2
